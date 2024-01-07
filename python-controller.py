@@ -38,7 +38,7 @@ try:
         message = f"LX: {lx}, LY: {ly}, RX: {rx}, RY: {ry}"
 
         # Send the message
-        #sock.sendto(message.encode('ascii'), (udp_ip, udp_port))
+        sock.sendto(message.encode('ascii'), (udp_ip, udp_port))
         print(lx, ly, rx, ry)
         # Calculate elapsed time and sleep accordingly
         elapsed = time.perf_counter() - last_time
